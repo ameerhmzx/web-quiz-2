@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+
+    --primary-light: #eceff1;
+    --primary-dark: #37474f;
+    --primary: #cfd8dc;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-light);
+}
+
+#registrationForm {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary);
+    padding: 32px 80px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px #00000040;
+}
+
+#registrationForm > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    background-color: var(--primary-dark);
+    padding: 8px 4px;
+    width: 100%;
+    color: white;
+    border-radius: 4px;
+    margin-top: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+label {
+    padding: 4px 0px;
+}
+
+input {
+    width: 230px;
+    min-width: 100px;
+    padding: 8px 8px;
+    outline-color: var(--primary-dark);
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: var(--primary-dark) 1px solid;
+}
+
+input:focus {
+    outline-color: var(--primary-dark);
+}
+
+.error-input {
+    background-color: #ffcdd2;
+    border: red 1px solid;
+}
+
+.error-msg {
+    text-align: right;
+    color: red;
+}
